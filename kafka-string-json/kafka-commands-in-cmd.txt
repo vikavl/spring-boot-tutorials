@@ -1,0 +1,34 @@
+Marco's docker:
+# kafka dir
+cd C:\Users\38096\Desktop\workspace\cp-all-in-one\cp-all-in-one-community
+
+# This Docker-compose command helps build the image, after which it creates and launches the Docker containers. 
+# The containers come from the services specified in the configuration file. 
+# If the containers are already running and you run docker-compose up, the container is recreated.
+docker-compose up -d
+
+# 
+docker-compose exec broker kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic users
+
+# describtion of created topic
+docker-compose exec broker kafka-topics --describe --topic users --bootstrap-server localhost:9092
+
+# publish
+docker-compose exec broker kafka-console-producer --topic users --bootstrap-server localhost:9092
+
+# listen
+docker-compose exec broker kafka-console-consumer --topic users --from-beginning --bootstrap-server localhost:9092
+
+#################################################################
+
+
+
+windows:
+# kafka dir
+cd C:\Users\38096\kafka
+
+# start zookeeper service:
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+# start kafka broker service:
+.\bin\windows\kafka-server-start.bat .\config\server.properties
