@@ -27,7 +27,7 @@ The project contains the docker-compose file. That file was taken from [guide-ar
 
 > **NOW EVERYTHING IS READY TO RUN APPLICATION!!! Congratulations!**
 
-![image3](/src/main/resources/static/img3.png)
+![image3](https://github.com/vikavl/spring-boot-tutorials/blob/main/kafka-string-json/src/main/resources/static/img3.png)
 
 2. You can execute kafka (the broker) to see available commands to use:
 ```
