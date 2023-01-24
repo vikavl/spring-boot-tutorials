@@ -3,6 +3,7 @@
 1. Introduction
 2. How to set kafka image?
 3. APIs
+4. Useful links about Kafka
 
 ## **1. INTRODUCTION**
 
@@ -125,6 +126,15 @@ ResponseEntity<>(Message: message, HttpStatus.CREATED);
 
 ![image11](https://github.com/vikavl/spring-boot-tutorials/blob/main/kafka-string-json/src/main/resources/static/img11.png)
 
+## **4. USEFUL LINKS ABOUT KAFKA**
+
+1. How to Install Apache Kafka Using Docker — The Easy Way: [https://towardsdatascience.com/how-to-install-apache-kafka-using-docker-the-easy-way-4ceb00817d8b](https://towardsdatascience.com/how-to-install-apache-kafka-using-docker-the-easy-way-4ceb00817d8b)
+
+2. Publishing and consuming of custom data types: [https://www.baeldung.com/spring-kafka](https://www.baeldung.com/spring-kafka)
+
+3. Examples of using and serializing objects while producing and consuming: [https://www.geeksforgeeks.org/spring-boot-kafka-consumer-example/](https://www.geeksforgeeks.org/spring-boot-kafka-consumer-example/)
+
+4. How to run zookeeper and broker locally on your machine: [https://kafka.apache.org/quickstart](https://kafka.apache.org/quickstart)
 
 ------
 
