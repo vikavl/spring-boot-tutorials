@@ -1,5 +1,5 @@
-# HELLO APP IN DOCKER
-## THE CONTENTS
+# **HELLO APP IN DOCKER**
+## **THE CONTENTS**
 1. INTRODUCTION
 2. API
 3. DOCKER
@@ -33,7 +33,7 @@ COPY target/docker.web-0.0.1-SNAPSHOT.jar hello-app-1.0.0.jar
 ENTRYPOINT ["java","-jar","/hello-app-1.0.0.jar"]
 ```
 
-Description of the parameters from Dockerfile:
+**Description of the parameters from Dockerfile**:
 1. ***adoptopenjdk/openjdk11:ubi*** - the version of java that is used by application (in that case is java 11).
 2. ***vikavl*** - opportunity to set the name of the maintainer of the application.
 3. ***target/docker.web-0.0.1-SNAPSHOT.jar*** - the path to snapshot (<ins>executable jar file</ins>) of the application. To get the snapshot of the application <ins>install</ins> (*./mvnw install*).
@@ -56,7 +56,9 @@ docker run -p8081:8080 hello-app:latest
 There is used *-p* flag to define ports of local machine (the laptop) and container.
 
 ### **3.3. SENDING THE REQUEST TO DOCKER CONTAINER**
+Using the local port to get access to port of container.
 
+![image](https://github.com/vikavl/spring-boot-tutorials/blob/main/rest-base-docker/src/main/resources/static/img1.png)
 
 ## **4. USEFUL LINKS ABOUT SPRING BOOT AND DOCKER**
 There is a set of related links to the topic:
