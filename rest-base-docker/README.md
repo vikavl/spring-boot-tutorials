@@ -43,7 +43,7 @@ ENTRYPOINT ["java","-jar","/hello-app-1.0.0.jar"]
 ```
 // the command to bulid an image
 // docker build {name of the new-created image executable jar file}--tag=:latest .
-docker build hello-app--tag=:latest .
+docker build --tag=hello-app:latest .
 ```
 
 ### **3.2 CREATE THE CONTAINER AND RUN IT**
