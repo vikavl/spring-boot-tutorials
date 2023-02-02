@@ -62,7 +62,7 @@ ENTRYPOINT ["java","-jar","/h2-docker-1.0.0.jar"]
 docker build --tag=h2-greetings:latest .
 ```
 
-![img1]()
+![img1](https://github.com/vikavl/spring-boot-tutorials/blob/main/h2-docker/src/main/resources/static/img1.png)
 
 ### **3.2 CREATE THE CONTAINER AND RUN IT**
 
@@ -73,9 +73,9 @@ docker run -p8081:8080 h2-greetings:latest
 ```
 There is used *-p* flag to define ports of local machine (the laptop) and container.
 
-![img2]()
+![img2](https://github.com/vikavl/spring-boot-tutorials/blob/main/h2-docker/src/main/resources/static/img2.png)
 
-![img3]()
+![img3](https://github.com/vikavl/spring-boot-tutorials/blob/main/h2-docker/src/main/resources/static/img3.png)
 
 ### **3.3. SENDING THE REQUESTS TO DOCKER CONTAINER**
 
@@ -85,18 +85,18 @@ Using the local port to get access to port of container.
 
 2 messages are sent.
 
-![img4]()
-![img5]()
+![img4](https://github.com/vikavl/spring-boot-tutorials/blob/main/h2-docker/src/main/resources/static/img4.png)
+![img5](https://github.com/vikavl/spring-boot-tutorials/blob/main/h2-docker/src/main/resources/static/img5.png)
 
 **2. Searching messages by type "greeting"**
 
-![img6]()
+![img6](https://github.com/vikavl/spring-boot-tutorials/blob/main/h2-docker/src/main/resources/static/img6.png)
 
 **3. The terminal output**
 
 There are 2 strings of sent messages and in line 3 is a type of searching.
 
-![img7]()
+![img7](https://github.com/vikavl/spring-boot-tutorials/blob/main/h2-docker/src/main/resources/static/img7.png)
 
 ## **4. USEFUL LINKS ABOUT SPRING BOOT AND DOCKER**
 There is a set of related links to the topic:
